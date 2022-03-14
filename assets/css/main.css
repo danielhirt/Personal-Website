@@ -1,26 +1,91 @@
 :root {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Fira Code", monospace;
 
-  --color-primary: #273043;
+  --color-primary: #051923;
   --color-secondary: #9197ae;
   --color-tertiary: #eff6ee;
+  --color-black: #051923;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+  background-color: #051923;
 }
 
 h1 {
   font-weight: bold;
 }
 
-.intro-container {
+.background {
+  height: 100vh;
+  opacity: 0.1;
   background-color: var(--color-primary);
-  padding: 2rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23006494' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.intro-text {
+.intro-container {
+  padding-top: 2rem;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.intro-text,
+.description {
   color: var(--color-tertiary);
   text-align: center;
 }
 
+.name {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
 .occupation {
-  font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+hr.solid {
+  border-top: 2px solid var(--color-tertiary);
+  border-radius: 1px;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.fa {
+  font-size: 20px;
+  width: 1.5rem;
+}
+
+.fa-github,
+.fa-linkedin {
+  text-align: center;
+  color: var(--color-tertiary);
+  text-decoration: none;
+}
+
+.description {
+  margin-top: 2rem;
 }
