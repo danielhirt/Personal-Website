@@ -20,40 +20,70 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/3b67391625.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link href="assets/css/main.css" rel="stylesheet" />
 
     <title>Daniel Hirt - Full Stack Software Engineer</title>
   </head>
   <body>
-    <div class="background"></div>
-    <div class="page-container">
-      <div class="intro-container">
-        <div
-          class="profile-picture"
-          style="background-image: url('assets/images/profile.jpg')"
-        ></div>
-        <div class="intro-text">
-          <h1 class="name">Daniel Hirt</h1>
-          <hr class="solid" />
-          <h2 class="occupation">Full-Stack Software Engineer</h2>
-        </div>
-
-        <div class="social-links">
+    <header id="slider-top" class="slide-in-top">
+      <div
+        class="profile-picture"
+        style="background-image: url('assets/images/profile.jpg')"
+      ></div>
+      <div class="intro-text center-text">
+        <h1 class="name">Daniel Hirt</h1>
+        <h2 class="occupation">Full-Stack Software Engineer</h2>
+        <div class="social-links center-text">
           <a
             href="https://github.com/danielhirt"
             target="_blank"
-            class="fa fa-github"
+            class="social-icon fa fa-github"
           ></a>
           <a
             href="https://linkedin.com/in/dchirt"
             target="_blank"
-            class="fa fa-linkedin"
+            class="social-icon fa fa-linkedin"
           ></a>
-
-          <div class="description">blah</div>
         </div>
       </div>
-    </div>
+    </header>
+    <main>
+      <div id="slider-left" class="description center-text slide-in-left">
+        <p>Pragmatic and proactive software engineer with 4 years of experience in
+          full-stack software development. I love building cool stuff. Simple as that. 
+        </div></p>
+      <div id="slider-left" class="skills-container slide-in-left">
+        <h2 class="skills-heading heading center-text">Skills</h2>
+        <ul class="skills-list center-text">
+          <li><i class="skill-icon fab fa-angular"></i>Angular 8+</li>
+          <li><i class="skill-icon fab fa-react"></i>React 17+</li>
+          <li><i class="skill-icon fab fa-java"></i>Core Java 8+</li>
+
+          <li><i class="skill-icon fa-solid fa-leaf"></i>Springboot</li>
+          <li><i class="skill-icon fa-solid fa-leaf"></i>Spring MVC</li>
+          <li>
+            <i class="skill-icon fa-solid fa-database"></i>Hibernate & JPA
+          </li>
+
+          <li><i class="skill-icon fa-solid fa-database"></i>Oracle</li>
+          <li><i class="skill-icon fa-solid fa-database"></i>PostgresSQL</li>
+          <li>
+            <i class="skill-icon fa-brands fa-aws"></i>Lamda, S3, RDS
+          </li>
+
+          <li><i class="skill-icon fa-brands fa-docker"></i>Docker</li>
+          <li><i class="skill-icon fa-solid fa-box-open"></i>Kubernetes</li>
+          <li><i class="skill-icon fa-brands fa-linux"></i>Linux</li>
+        </ul>
+      </div>
+      <div id="slider-left" class="projects-container slide-in-left-projects">
+        <h2 class="projects-heading heading center-text">Projects</h2>
+      </div>
+    </main>
   </body>
 </html>
