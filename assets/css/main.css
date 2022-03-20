@@ -19,25 +19,34 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: bold;
-}
-
-.skills-heading,
-.projects-heading {
-  display: flex;
-  flex: 1;
-  width: 70%;
-  margin: 20px auto;
-  line-height: 1em;
 }
 
 h1,
 h2,
+h3,
 li,
 i,
+span,
 p {
   color: var(--color-tertiary);
+}
+
+.resume-link {
+  text-decoration: none;
+  color: var(--color-tertiary);
+  font-weight: bold;
+}
+
+.skills-heading,
+.projects-heading,
+.experience-heading {
+  display: flex;
+  flex: 1;
+  margin: 20px auto;
+  line-height: 1em;
 }
 
 .center-text {
@@ -77,6 +86,7 @@ header {
 
 .social-links {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 hr.solid {
@@ -120,8 +130,8 @@ hr.solid {
 
 .description {
   margin-top: 2rem;
-  margin-right: 12rem;
-  margin-left: 12rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .skills-container {
@@ -129,8 +139,7 @@ hr.solid {
 }
 
 .skills-list {
-  padding-left: 10em;
-  padding-right: 6rem;
+  padding-left: 0;
   margin-top: 2rem;
   flex-wrap: wrap;
   display: flex;
@@ -138,7 +147,7 @@ hr.solid {
 }
 
 .skills-list li {
-  display: flex;
+  display: inline-block;
   flex: 1 0 25%;
   margin: 1rem;
 }
@@ -150,6 +159,30 @@ hr.solid {
 }
 
 .projects-container {
+  margin-top: 2rem;
+}
+
+.project-description {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.diploma-image {
+  max-width: 50%;
+}
+
+.blur {
+  filter: blur(20px);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: 0 2rem 2rem 2rem;
+}
+
+.grid-item {
+  text-align: center;
   margin-top: 2rem;
 }
 
@@ -186,8 +219,18 @@ hr.solid {
 }
 
 .slide-in-left-projects {
-  animation: slide-in 1s forwards;
-  -webkit-animation: slide-in 1s forwards;
+  animation: slide-in 1.5s forwards;
+  -webkit-animation: slide-in 1.5s forwards;
+}
+
+.slide-in-left-experience {
+  animation: slide-in 1.5s forwards;
+  -webkit-animation: slide-in 1.5s forwards;
+}
+
+.slide-in-left-education {
+  animation: slide-in 1.5s forwards;
+  -webkit-animation: slide-in 1.5s forwards;
 }
 
 @keyframes slide-in {
@@ -199,5 +242,18 @@ hr.solid {
 @-webkit-keyframes slide-in {
   100% {
     -webkit-transform: translateX(0%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .skills-list li {
+    flex: 1 0 50%;
+    margin: 1rem;
   }
 }
